@@ -1,0 +1,98 @@
+<html lang="en">
+  
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Survey Form</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <div id='div1'>
+        <header>
+          <h1 id = "title">CUSTOMER FEEDBACK</h1>
+            <p id="description">We would love to hear your thoughts, suggestions, or concerns regarding your shopping experience.</p>
+        </header>
+      </div>
+      <div id="div2">
+        <main>
+          <form id="survey-form" method = "get">
+            <div id=grid1>
+                <label id="name-label" for="name">Name: </label>
+              <input type="text" name="name" id="name" placeholder="First & Last Name" required class='txt'/><br>
+
+
+              <label id="email-label" for="email"> Email: </label>
+              <input type="email" name="email" id="email" placeholder="Email Adress" required class='txt' />
+
+              <br>
+
+              <label id="number-label" for="age">Age: </label>
+              <input type="number" name="age" id="number" min="1" max="200" placeholder="How old are you" required class='txt'/>
+            <div>
+
+            <br> <br>
+
+            <label id="rate-label" for="rate" >How best would you describe our services? </label><br>
+            <select name="rate" id="dropdown"  placeholder="Select an option">
+              <option value="very_good">Very Good</option>
+              <option value="good">Good</option>
+              <option value="ordinary">Ordinary</option>
+              <option value="bad">Bad</option>
+              <option value="very_bad">Very Bad</option>
+            </select>
+            <br> <br>
+            Did you find what you were looking for? <br>
+            <input type="radio" id = "yes" name = "find" value="Yes">                               
+            <label for = "yes">Yes</label><br>
+            <input type="radio" id = "no" name = "find" value="No">                                 
+            <label for = "no">No</label><br>
+            <input type="radio" id = "not_exactly" name = "find" value="No">                                 
+            <label for = "not_exactly">Not Exactly</label><br><br>
+
+            Which product categories are you most inTerested in? <br>
+             <div id = grid2>
+                  <div>
+                  <input type="checkbox" id = "M&E" name = "interest" value="Monitoring & Evaluation">
+                  <label for="M&E">Electronics</label>                                      </div>
+                  <div>
+                  <input type="checkbox" id = "h&g" name = "interest" value="Web Development"> 
+                  <label for="h&g">Home & Garden</label> 
+                   </div>
+                   <div>
+                  <input type="checkbox" id = "fasion" name = "interest" value="Data Science"> 
+            <label for = "fasion">Fasion</label>
+                  </div>
+                 <div>
+                  <input type="checkbox" id = "sport" name = "interest" value="Data Science"> 
+                  <label for = "sport">Sporting Goods</label> 
+                   </div>
+                    <div>
+                  <input type="checkbox" id = "auto" name = "interest" value="Data Science"> 
+                  <label for = "auto">Auto parts</label> 
+                    </div>
+                    <div>
+                  <input type="checkbox" id = "other" name = "interest" value="Data Science"> 
+                  <label for = "other">Other</label>               
+                   </div>
+            </div>
+            <br><br>
+
+            Please provide feedback on your shopping experience below.<br>
+            <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            rows="5"
+            placeholder="Type feedback here">           
+            </textarea><br><br>
+
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+          </form>
+        </main>
+      </div>
+    </body>
+ </html>

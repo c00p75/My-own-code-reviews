@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+  margin: 0;
+  /*background:linear-gradient(90deg, rgb(22, 22, 78), rgb(207, 207, 223), rgb(255, 255, 255), rgb(207, 207, 223), rgb(22, 22, 78));*/
+  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: 'Lato', sans-serif; 
+
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+  min-width:50vw;
+}
+
+#div1{  
+  margin-top: -10px;
+  padding: 0% 34vw;
+  background-image: url(https://wallpaperaccess.com/full/4199381.jpg);  
+  opacity: .7;
+}
+
+
+#div2{
+  margin-top: 10px;
+  padding: 0% 34.85vw;
+  background: url(https://images.unsplash.com/photo-1579600161224-cac5a2971069?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-family: 'Lato', sans-serif;  
+}
+
+header{ 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: rgb(255, 255, 255);
+  margin: auto;
+  opacity: 1;
+  text-align: center;
+  border-radius: 7px;
+  margin-top: -0px;
+  
+}
+
+main{
+  font-weight: bold;
+  font-size: 0.5cm;
+  opacity: 1;
+  background:rgba(245, 245, 245, 0.9);   
+  border-radius: 10px;
+  margin: 5% -30%;
+  padding: 5% 15% 5% 15%;
+  line-height:0.8cm
+}
+
+
+h1{font-weight: bold;
+   font-size: 50px;
+}
+
+
+#description{
+  font-size: 0.4cm;
+  font-family: Times New Roman;
+}
+
+#grid1{
+  grid-column: 1/ 1;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0px 0px;
+  grid-row-gap: 1px;
+}
+
+#grid2{
+  grid-column: 2/ 4;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1px 10px;
+  grid-row-gap: 0px;
+}
+
+.txt{
+  padding: 16px 20px;
+  border-radius: 5px;
+  border: 2px solid rgb(80, 89, 139);
+  outline: none;
+}
+
+.txt:focus{
+  transform: scale(1.1);
+}
+
+#dropdown{
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid rgb(80, 89, 139);
+  border-radius: 4px;
+  outline: none;
+}
+
+#comments{
+  width: 100%;
+}
+
+#submit {
+  font-weight: bold;
+  font-size: 0.5cm;
+  margin: auto;
+  width:100%;
+  padding: 0.75rem 10%;
+  border-radius: 5px;
+  border: 2px solid rgb(80, 89, 139);
+  background: rgb(80, 89, 139);
+  cursor: pointer;
+}
